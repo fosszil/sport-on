@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SportOn
 
-## Getting Started
+SportOn is a web app for the badminton community. Find players, discover and book courts, join tournaments, and share updates with other players.
 
-First, run the development server:
+## Features
+
+- **Player profiles** — create an account, upload a profile photo, and browse players.
+- **Tournaments** — create and manage tournaments, register to play, and filter by singles, doubles, or mixed doubles.
+- **Court bookings** — search courts by name, location, or city and book a date and time slot.
+- **Court details** — view photos, amenities, hourly prices, contact information, and maps.
+- **Community** — share posts and images, reply to discussions, and see new posts and replies in realtime.
+- **Personal dashboard** — view your profile, tournament registrations, and courts and tournaments you manage.
+
+## Built with
+
+Next.js, React, TypeScript, Tailwind CSS, and Supabase for authentication, database, image storage, and realtime updates.
+
+## Getting started
+
+You need Node.js, npm, and a Supabase project configured with the app's database tables and storage buckets.
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env.local` file in the project root with your Supabase credentials:
+
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+Open [localhost:3000](http://localhost:3000) in your browser. Restart the development server after changing environment variables.
+
+To build and run for production:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
